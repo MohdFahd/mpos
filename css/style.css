@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    text-transform: capitalize;
+    font-family: system-ui;
+    line-height: 1.6;
+    text-decoration: none;
+    /* list-style: none; */
+}
+.container{
+    max-width: 1100px;
+    margin: 0% auto;
+    overflow: auto;
+    padding: 0px 40px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+:root{
+    --main-color: #5b8df1;
+    --secondry-color:#5b8df1;
+}
+header{
+    width: 100%;
+    /* position: fixed; */
+    z-index: 999;
+    display: flex;
+    background-color: var(--main-color);
+    padding: 8px;
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.301);
+}
+header ul{
+    display: flex;
+    list-style: none;
+}
+header li a{
+    margin: 0px 15px;
+    color: #fff;
+    font-weight: 500;
+}
+.main-home{
+    background-color: var(--secondry-color);
+    color: #fff;
+}
+.main-home .container div{
+    margin-left: 30px;
+}
+.main-home h1{
+    font-size: 36px;
+    color: black;
+}
+.main-home h1 span{
+    color: #fff;
+}
+.main-home p{
+    color: #fff;
+    width: 90%;
+}
+.list{
+    margin: 0px 19px;
+}
+.btn{
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.247);
+    margin: 12px 0px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+.btn:hover{
+    transform: scale(0.94);
+}
+.ad{
+    max-width: 1000px;
+    padding: 50px;
+    position: relative;
+}
+.info h1{
+    width: 600;
+    margin: 0px 10px;
+}
+.info h1 span{
+    margin-left: 50px;
+}
+.info::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 3px;
+    width: 65;
+    transform: rotate(90deg);
+    left: 265px;
+}
+.card{
+    margin: 40px 15px;
+    box-shadow: 1px 1px 8px rgba(8, 8, 93, 0.103);
+    padding: 10px 15px;
+}
+.card img{
+    width: 70px;
+    margin: 12px 0px;
+}
+.center{
+    text-align: center;
+}
+.under-line::after{
+    color: var(--main-color);
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #5b8df1;
+    position: absolute;
+    top: 40px;
+    right:650px ;
+}
+.service h1{
+    font-size: 25px;
+    position: relative;
+}
+.softare-testing{
+    background-color: #f2f5f6;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+.s-t{
+    width: 40%;
+    margin-left: 50px;
+}
+.Testing-Features{
+    list-style: none;
+}
+.Testing-Features i{
+    color: var(--main-color);
+    margin: 0px 12px;
+}
+.Testing-Features .btn{
+    background-color: var(--main-color);
+    color: #fff;
+    width: 110;
+}
+.d-mpos{
+    background-color: #fff;
+    flex-direction: row;
+}
+.img-of-laptop{
+    position: relative;
+}
+.img-of-laptop::after{
+    content: "";
+    width: 90%;
+    height: 0px;
+    position: absolute;
+    box-shadow: 12px 12px 40px 2px black;
+    background-color: rgb(146, 39, 39);
+    bottom: 12;
+    background-color: transparent;
+    right: 6;
+    border-radius: 50%;
+    transform: rotate(-2deg);
+}
+.contact-us, .cont{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.p-con{
+    justify-content: center;
+    margin: 50px ;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.c-con{
+    align-items: flex-start;
+}
+.c-con i, .circle{
+    background-color: #f4f4f4;
+    color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 0px ;
+    font-size: 21px;
+    margin: 0px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+}
+.email{
+    width: 300px;
+    height: 35px;
+    padding: 12px;
+    border-radius: 30px 0px 0px 30px;
+    border-left: none;
+    border: 1px solid beige;
+    margin-left: 20px;
+}
+.email:focus{
+    outline: none;
+}
+.sub{
+    border-radius: 0px 30px 30px 0px;
+    box-shadow: none;
+    border: black;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px 0;
+    margin-left: -10;
+    width: 220;
+}
+footer{
+    background-color: #f4f4f4;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
